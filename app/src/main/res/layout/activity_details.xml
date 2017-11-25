@@ -6,6 +6,14 @@
     android:layout_height="match_parent"
     tools:context="com.studios.flytask.DetailsActivity">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
     <RelativeLayout
         android:id="@+id/title_layout"
         android:layout_width="match_parent"
@@ -142,14 +150,16 @@
         android:id="@+id/detailed_layout"
         android:layout_below="@+id/description_layout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        >
 
         <TextView
             android:id="@+id/flight_number"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
             android:textColor="#52aed5"
             android:textSize="14sp"
             android:text="Рейс 528"
@@ -161,8 +171,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="10dp"
             android:src="@drawable/company"
             />
 
@@ -170,8 +178,6 @@
             android:id="@+id/destination_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="15dp"
             android:textColor="@color/maincolor"
             android:textSize="14sp"
             android:layout_below="@+id/company_img"
@@ -184,8 +190,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/destination_text"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
             android:src="@drawable/startfly"
             />
 
@@ -194,8 +198,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/destination_text"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="10dp"
             android:layout_alignParentEnd="true"
             android:src="@drawable/endfly"
             />
@@ -205,8 +207,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/startfly"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
             android:textColor="@color/colorPrimary"
             android:textSize="32sp"
             android:text="06:05"
@@ -218,8 +218,6 @@
             android:layout_height="40dp"
             android:layout_below="@id/startfly"
             android:layout_centerHorizontal="true"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
             android:textColor="@android:color/darker_gray"
             android:gravity="center_vertical"
             android:textSize="14sp"
@@ -232,8 +230,6 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/startfly"
             android:layout_alignParentEnd="true"
-            android:layout_marginRight="10dp"
-            android:layout_marginTop="10dp"
             android:textColor="@color/colorPrimary"
             android:textSize="32sp"
             android:text="08:45"
@@ -245,7 +241,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/start_time_text"
-            android:layout_marginLeft="10dp"
             android:textSize="18sp"
             android:textColor="@android:color/darker_gray"
             android:text="SEM"
@@ -258,7 +253,6 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/start_time_text"
             android:layout_alignParentEnd="true"
-            android:layout_marginRight="10dp"
             android:textSize="18sp"
             android:textColor="@android:color/darker_gray"
             android:text="UST"
@@ -270,7 +264,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/short_name"
-            android:layout_marginLeft="10dp"
             android:textSize="14sp"
             android:textColor="@color/maincolor"
             android:text="23.10.2016"
@@ -282,14 +275,567 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/short_name"
             android:layout_alignParentEnd="true"
-            android:layout_marginRight="10dp"
             android:textSize="14sp"
             android:textColor="@color/maincolor"
             android:text="23.10.2016"
             />
 
-        
+        <TextView
+            android:id="@+id/wait_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/start_date"
+            android:gravity="center_horizontal"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="16sp"
+            android:text="Ожидание: 15 ч. 20 мин."
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            />
 
     </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/detailed_layout2"
+        android:layout_below="@+id/detailed_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:id="@+id/flight_number2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#52aed5"
+            android:textSize="14sp"
+            android:text="Рейс 529"
+
+            />
+
+        <ImageView
+            android:id="@+id/company_img2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/companytwo"
+            />
+
+        <TextView
+            android:id="@+id/destination_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/maincolor"
+            android:textSize="14sp"
+            android:layout_below="@+id/company_img2"
+            android:textStyle="bold"
+            android:text="Усть-Каменогорск - Астана"
+            />
+
+        <ImageView
+            android:id="@+id/startfly2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/destination_text2"
+            android:src="@drawable/startfly"
+            />
+
+        <ImageView
+            android:id="@+id/endfly2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/destination_text2"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/endfly"
+            />
+
+        <TextView
+            android:id="@+id/start_time_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/startfly2"
+            android:textColor="@color/colorPrimary"
+            android:textSize="32sp"
+            android:text="23:05"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@id/startfly2"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/darker_gray"
+            android:gravity="center_vertical"
+            android:textSize="14sp"
+            android:text="------- 4ч 55 мин -------"
+            />
+
+        <TextView
+            android:id="@+id/end_time_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/startfly2"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/colorPrimary"
+            android:textSize="32sp"
+            android:text="04:00"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/short_name_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/start_time_text2"
+            android:textSize="18sp"
+            android:textColor="@android:color/darker_gray"
+            android:text="UST"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/short_name2_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/start_time_text2"
+            android:layout_alignParentEnd="true"
+            android:textSize="18sp"
+            android:textColor="@android:color/darker_gray"
+            android:text="AST"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/start_date_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/short_name_2"
+            android:textSize="14sp"
+            android:textColor="@color/maincolor"
+            android:text="24.10.2016"
+            />
+
+        <TextView
+            android:id="@+id/start_date2_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/short_name_2"
+            android:layout_alignParentEnd="true"
+            android:textSize="14sp"
+            android:textColor="@color/maincolor"
+            android:text="24.10.2016"
+            />
+
+        <TextView
+            android:id="@+id/wait_text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/start_date_2"
+            android:gravity="center_horizontal"
+            android:textColor="#5e5d5f"
+            android:textSize="16sp"
+            android:text="Общее время в пути: 7 ч. 35 мин."
+            android:layout_marginTop="10dp"
+            />
+
+    </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/passenger_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/detailed_layout2"
+                android:background="#edecf2"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Пассажиры"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/passenger_detailed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@id/passenger_layout"
+                >
+
+                <TextView
+                    android:id="@+id/pas_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#5e5d5f"
+                    android:textSize="16sp"
+                    android:text="Malayev Dauren"
+                    android:layout_alignParentStart="true"
+                    />
+
+                <TextView
+                    android:id="@+id/pas_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#5e5d5f"
+                    android:textSize="16sp"
+                    android:text="037750091"
+                    android:layout_alignParentEnd="true"
+                    />
+
+                <TextView
+                    android:id="@+id/pas_name2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#5e5d5f"
+                    android:textSize="16sp"
+                    android:text="Daulet Aisana"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@id/pas_name"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/pas_num2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#5e5d5f"
+                    android:textSize="16sp"
+                    android:text="213412341"
+                    android:layout_below="@id/pas_num"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentEnd="true"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/reserved_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/passenger_detailed"
+                android:background="#edecf2"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="№ бронирования"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/reserved_detailed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@id/reserved_layout"
+                >
+
+                <TextView
+                    android:id="@+id/reserve_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#5e5d5f"
+                    android:textSize="16sp"
+                    android:text="L2SADB"
+                    android:layout_alignParentStart="true"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/return_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/reserved_detailed"
+                android:background="#edecf2"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Список возвратов и обменов"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    />
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/firstcard"
+                android:layout_below="@id/return_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="15dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+
+                        >
+
+                        <TextView
+                            android:id="@+id/order_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:text="№ 201245123"
+                            android:textStyle="bold"
+                            android:textSize="18dp"
+                            android:textColor="@color/maincolor"
+                            />
+
+                        <ImageView
+                            android:id="@+id/icon_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_shield"
+                            android:layout_marginRight="10dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/order_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="23.10.2016"
+                            android:textSize="14dp"
+                            android:gravity="end"
+                            android:textColor="@color/maincolor"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/main_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:id="@+id/name_text_one"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="14dp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="20dp"
+                            android:text="MAZENTSEV"
+                            android:textColor="@color/maincolor"
+                            />
+
+                        <TextView
+                            android:id="@+id/travel_text_one"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="14dp"
+                            android:text="Страхование жизни\n20.12.2016 - 31.12.2016"
+                            android:textColor="@color/maincolor"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="20dp"
+                        android:paddingBottom="20dp"
+                        >
+
+                        <ImageView
+                            android:id="@+id/status_image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/error_asset"
+                            />
+
+                        <TextView
+                            android:id="@+id/status_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Отказано"
+                            android:gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:textSize="14dp"
+                            android:textColor="@color/error_color"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_below="@id/firstcard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="15dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+
+                        >
+
+                        <TextView
+                            android:id="@+id/order_number_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:text="№ 201245123"
+                            android:textStyle="bold"
+                            android:textSize="18dp"
+                            android:textColor="@color/maincolor"
+                            />
+
+                        <ImageView
+                            android:id="@+id/icon_text_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_plane"
+                            android:layout_marginRight="10dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/order_date_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="23.10.2016"
+                            android:textSize="14dp"
+                            android:gravity="end"
+                            android:textColor="@color/maincolor"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/main_layout_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:id="@+id/name_text_one_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="14dp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="20dp"
+                            android:text="MAZENTSEV"
+                            android:textColor="@color/maincolor"
+                            />
+
+                        <TextView
+                            android:id="@+id/travel_text_one_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="14dp"
+                            android:text="Авиабилет\nАлматы - Семипалатинск"
+                            android:textColor="@color/maincolor"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="20dp"
+                        android:paddingBottom="20dp"
+                        >
+
+                        <ImageView
+                            android:id="@+id/status_image_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/done_asset"
+                            />
+
+                        <TextView
+                            android:id="@+id/status_text_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Возврат оформлен"
+                            android:gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:textSize="14dp"
+                            android:textColor="@color/done_color"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+
+    </ScrollView>
 
 </RelativeLayout>
