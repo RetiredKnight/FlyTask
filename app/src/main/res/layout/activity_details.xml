@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.studios.flytask.DetailsActivity">
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@color/barcolor"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Общая стоймость"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:layout_above="@+id/full_value"
+        />
+
+        <TextView
+            android:id="@+id/full_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="134 000"
+            android:textSize="44sp"
+            android:layout_centerInParent="true"
+            android:textColor="#ffffff"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/full_value"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:text="тенге"
+            android:gravity="bottom"
+            android:layout_marginLeft="10dp"
+            />
+
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shape"
+            android:layout_below="@+id/full_value"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:text="Возврат"
+            android:textStyle="normal"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:layout_alignParentStart="true"
+            />
+
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shape"
+            android:layout_below="@+id/full_value"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="30dp"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:text="Обмен"
+            android:textStyle="normal"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/description_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_layout"
+        android:background="#edecf2"
+        >
+
+    <ImageView
+        android:id="@+id/planeimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/ic_plane"
+        />
+
+        <TextView
+            android:id="@+id/name_operation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/planeimg"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            android:text="Авиабилет"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/planeimg"
+            android:layout_below="@id/name_operation"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="12sp"
+            android:text="№ брони: 123456"
+            android:paddingBottom="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_alignParentEnd="true"
+            android:textSize="16sp"
+            android:text="100 000 тг"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/detailed_layout"
+        android:layout_below="@+id/description_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/flight_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#52aed5"
+            android:textSize="14sp"
+            android:text="Рейс 528"
+
+            />
+
+        <ImageView
+            android:id="@+id/company_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/maincolor"
+            android:textSize="14sp"
+            android:layout_below="@+id/flight_number"
+            android:textStyle="bold"
+            android:text="Семипалатинск - Усть-Каменогорск"
+            />
+
+        
+
+    </RelativeLayout>
+
+</RelativeLayout>

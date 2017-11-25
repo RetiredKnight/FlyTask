@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#528fc8</color>
+    <color name="colorPrimaryDark">#528fc8</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="maincolor">#212c5b</color>
+    <color name="barcolor">#528fc8</color>
+    <color name="done_color">#4caf50</color>
+    <color name="error_color">#ff4132</color>
+</resources>

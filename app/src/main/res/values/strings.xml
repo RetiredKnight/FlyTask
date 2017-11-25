@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FlyTask</string>
+    <string name="orders_action_bar">Мои заказы</string>
+    <string name="details_action_bar">Детали заказа</string>
+</resources>
