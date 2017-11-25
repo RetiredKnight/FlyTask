@@ -163,18 +163,129 @@
             android:layout_alignParentEnd="true"
             android:layout_marginTop="10dp"
             android:layout_marginRight="10dp"
+            android:src="@drawable/company"
             />
 
         <TextView
+            android:id="@+id/destination_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="15dp"
             android:textColor="@color/maincolor"
             android:textSize="14sp"
-            android:layout_below="@+id/flight_number"
+            android:layout_below="@+id/company_img"
             android:textStyle="bold"
             android:text="Семипалатинск - Усть-Каменогорск"
+            />
+
+        <ImageView
+            android:id="@+id/startfly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/destination_text"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/startfly"
+            />
+
+        <ImageView
+            android:id="@+id/endfly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/destination_text"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/endfly"
+            />
+
+        <TextView
+            android:id="@+id/start_time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/startfly"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="32sp"
+            android:text="06:05"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@id/startfly"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/darker_gray"
+            android:gravity="center_vertical"
+            android:textSize="14sp"
+            android:text="------- 2ч 40 мин -------"
+            />
+
+        <TextView
+            android:id="@+id/end_time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/startfly"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="32sp"
+            android:text="08:45"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/short_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/start_time_text"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp"
+            android:textColor="@android:color/darker_gray"
+            android:text="SEM"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/short_name2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/start_time_text"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            android:textSize="18sp"
+            android:textColor="@android:color/darker_gray"
+            android:text="UST"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/start_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/short_name"
+            android:layout_marginLeft="10dp"
+            android:textSize="14sp"
+            android:textColor="@color/maincolor"
+            android:text="23.10.2016"
+            />
+
+        <TextView
+            android:id="@+id/start_date2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/short_name"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            android:textSize="14sp"
+            android:textColor="@color/maincolor"
+            android:text="23.10.2016"
             />
 
         
